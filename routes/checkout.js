@@ -3,7 +3,7 @@ const router = express.Router();
 const data = require('../data.json');
 
 /**
- * GET home page.
+ * GET the checkout page.
  */
 router.get('/:id', function(req, res, next) {
 
