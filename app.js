@@ -7,7 +7,8 @@ const bodyParser = require('body-parser');
 
 const homeRouter = require('./routes/home');
 const checkoutRouter = require('./routes/checkout');
-const paymentRouter = require('./routes/payment')
+const paymentRouter = require('./routes/payment');
+const callbackRouter = require('./routes/callback');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use('/', homeRouter);
 app.use('/home', homeRouter);
 app.use('/checkout', checkoutRouter);
 app.use('/payment', paymentRouter);
+app.use('/callback', callbackRouter);
 
 /**
  * catch 404 and forward to error handler

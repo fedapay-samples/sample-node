@@ -22,7 +22,7 @@ router.post('/', async function(req, res, next) {
 
         amount: data.amount,
 
-        callback_url: 'http://localhost:3000/home',
+        callback_url: 'http://localhost:3000/callback',
 
         currency: {
             iso: 'XOF'
