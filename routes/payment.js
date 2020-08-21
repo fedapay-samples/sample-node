@@ -1,5 +1,6 @@
 const express = require('express');
 const { FedaPay, Transaction } = require('fedapay');
+const env = require('../config')
 const router = express.Router();
 
 /**
@@ -10,10 +11,9 @@ router.post('/', async function(req, res, next) {
 
     /**
      * Set the ApiKey and the environment.
-     * Replace [APIKEY] by your API KEY.
      */
-    FedaPay.setApiKey("[APIKEY]");
-    FedaPay.setEnvironment('sandbox');
+    FedaPay.setApiKey(env.apikeys);
+    FedaPay.setEnvironment(env.environment);
 
     const data = req.body;
     const transaction = await Transaction.create({

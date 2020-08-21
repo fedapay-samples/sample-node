@@ -39,7 +39,10 @@ input:focus {
 
 /* line 24, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 .section_padding {
-  padding: 140px 0px;
+  padding-top: 140px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 05px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -4014,7 +4017,7 @@ ul {
 /* line 761, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product.scss */
 .product_description_area {
   padding-bottom: 120px;
-  margin-top: 60px;
+  margin-top: 15px;
 }
 
 @media (max-width: 991px) {
@@ -4980,7 +4983,7 @@ ul {
 
 /* line 1599, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product.scss */
 .order_box {
-  background: #ecfdff;
+  background: #22f0a156;
   padding: 30px;
 }
 

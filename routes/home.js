@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { FedaPay, Transaction } = require('fedapay');
 const data = require('../data.json');
+const env = require('../config')
 
 /**
  * GET home page.
@@ -17,10 +18,9 @@ router.get('/', async function(req, res, next) {
 
         /**
          * Set the ApiKey and the environment.
-         * Replace [APIKEY] by your API KEY.
          */
-        FedaPay.setApiKey("[APIKEY]");
-        FedaPay.setEnvironment('sandbox');
+        FedaPay.setApiKey(env.apikeys);
+        FedaPay.setEnvironment(env.environment);
 
         try {
 
@@ -39,8 +39,6 @@ router.get('/', async function(req, res, next) {
                 status = "failed";
             }
         } catch (error) {
-
-            console.log(error.message);
 
             status = "failed";
         }
