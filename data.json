@@ -1,0 +1,90 @@
+{
+    "1": {
+        "src": "/images/product/product_1.jpg",
+        "description": "Sweat à capuche blanc avec la cover du troisième album de l'artiste",
+        "modele": " Gold, Blanc, Noir et Bleu",
+        "tailles": "L , XL et XXL",
+        "subject": "Juice WRLD",
+        "category": "Sweat",
+        "quantity": 2,
+        "id": "juice-mod",
+        "price": "12500"
+    },
+    "2": {
+        "src": "/images/product/product_2.jpg",
+        "description": "Sweat à capuche avec la cover du troisième album de l'artiste",
+        "modele": "3D Flashy",
+        "tailles": "XL et XXL",
+        "subject": "Juice WRLD",
+        "category": "Sweat",
+        "quantity": 10,
+        "id": "juice-mod2",
+        "price": "13500"
+    },
+    "3": {
+        "src": "/images/product/product_3.jpg",
+        "description": "Sweat à capuche unisexe portant l'effigie du boys band",
+        "modele": "Noir, Gold et Bleu",
+        "tailles": "M , XL et XXL",
+        "subject": "5 Seconds Of Summer",
+        "category": "Sweat",
+        "quantity": 6,
+        "id": "sos",
+        "price": "15500"
+    },
+    "4": {
+        "src": "/images/product/product_4.jpg",
+        "description": "Sweat à capuche unisexe du mangas Black Clover représentant ",
+        "modele": "Blanc-Noir ",
+        "tailles": "S , XL et XXL",
+        "subject": "Asta",
+        "category": "Sweat",
+        "quantity": 7,
+        "id": "asta",
+        "price": "10500"
+    },
+    "5": {
+        "src": "/images/product/product_5.jpg",
+        "description": "Sweat à capuche pour homme du mangas One Piece représentant ",
+        "modele": "Gold",
+        "tailles": "S , XL et XXL",
+        "subject": "Ace D. Portgas",
+        "category": "Sweat",
+        "quantity": 5,
+        "id": "ace",
+        "price": "14500"
+    },
+    "6": {
+        "src": "/images/product/product_6.jpg",
+        "description": "Sweat à capuche unisexe portant la cover de l'album <i>Coloring Book 3</i> de  ",
+        "modele": "Orange",
+        "tailles": "S , XL et XXL",
+        "subject": "Chance The Rapper",
+        "category": "Sweat",
+        "quantity": 1,
+        "id": "chance",
+        "price": "14500"
+    },
+    "7": {
+        "src": "/images/product/product_7.jpg",
+        "description": "Sweat à capuche unisexe portant la cover de l'album <i>Culture II </i>  des ",
+        "modele": "Black et Rouge",
+        "tailles": "S , XL et XXL",
+        "subject": "Migos",
+        "category": "Sweat",
+        "quantity": 8,
+        "id": "migos",
+        "price": "14500"
+    },
+    "8": {
+        "src": "/images/product/product_8.jpg",
+        "description": "Sweat à capuche pour homme du mangas Nanatsu No Tazai représentant ",
+        "modele": "Pourpre, Violet, Noir",
+        "tailles": "S , XL et XXL",
+        "subject": "Méliodas",
+        "category": "Sweat",
+        "quantity": 0,
+        "id": "meliodas",
+        "price": "14500"
+    }
+}
