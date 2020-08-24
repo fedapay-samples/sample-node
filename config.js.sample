@@ -1,0 +1,6 @@
+const env = {
+    apiKeys: "<%SECRET_KEY%>",
+    environment: "<%ENVIRONMENT%>",
+    projectName: "<%PROJECT_NAME%>"
+}
+module.exports = env;
