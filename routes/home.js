@@ -18,7 +18,7 @@ router.get('/', async function(req, res, next) {
 
             status = req.query.status;
     }
-    res.render('home', { title: 'My Store', data: data, status: status });
+    res.render('home', { title: env.projectName, data: data, status: status });
 });
 
 module.exports = router;
