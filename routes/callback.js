@@ -1,45 +1,34 @@
 const express = require('express');
-const router = express.Router();
 const { FedaPay, Transaction } = require('fedapay');
-const data = require('../data.json');
-const env = require('../config')
+const env = require('../config');
+
+const router = express.Router();
 
 /**
- * Callback_URL route.
+ * Callback route.
 */
-router.get('/', async function(req, res, next) {
+router.get('/', async function(req, res) {
 
-    let status = "";
+    let status = '';
+
     /**
      * Check if the parameters status and id are defined then 
      * display by status value an alert in the view
      */
     if(typeof req.query.status !== 'undefined' && typeof req.query.id !== 'undefined') {
 
-        /**
-         * Set the ApiKey and the environment.
-         */
-        FedaPay.setApiKey(env.apikeys);
+        // Set the ApiKey and the environment.
+        FedaPay.setApiKey(env.apiKey);
         FedaPay.setEnvironment(env.environment);
 
         try {
-
             const transaction = await Transaction.retrieve(req.query.id);
-
-            if (transaction.status == "approved") {
-
-            status = "success";
-
-            } else {
-
-                status = "failed";
-
-            }
+            status = transaction.status === 'approved' ? 'success' : 'failed';
         } catch (error) {
-
             status = "failed";
         }
     }
+
     res.redirect(`/home?status=${status}`);
 });
 
