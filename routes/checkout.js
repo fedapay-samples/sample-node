@@ -1,22 +1,13 @@
 const express = require('express');
-const router = express.Router();
 const data = require('../data.json');
 
+const router = express.Router();
+
 /**
- * GET home page.
+ * GET the checkout page.
  */
-router.get('/:id', function(req, res, next) {
-
-    if (req.params.id != '') {
-
-        res.render('checkout', { title: 'My Store', data: data[req.params.id] });
-
-    } else {
-
-        next();
-
-    }
-  
+router.get('/:id', function(req, res) {
+    res.render('checkout', { data: data[req.params.id] });
 });
 
 module.exports = router;
